@@ -78,7 +78,7 @@ ax = plt.gca()
 plt.xlim([1, EPISODES])
 if save_fig:
     if not os.path.exists(out_dir): os.mkdir(out_dir)
-    plt.savefig(os.path.join(out_dir, "rewards.png"), bbox_inches="tight")
+    plt.savefig(os.path.join(out_dir, "rewards_eps_greedy.png"), bbox_inches="tight")
 else:
     plt.show()
 plt.close()
@@ -99,7 +99,7 @@ for legobj in leg.legendHandles:
     legobj.set_linewidth(4.0)
 if save_fig:
     if not os.path.exists(out_dir): os.mkdir(out_dir)
-    plt.savefig(os.path.join(out_dir, "actions.png"), bbox_inches="tight")
+    plt.savefig(os.path.join(out_dir, "actions_eps_greedy.png"), bbox_inches="tight")
 else:
     plt.show()
 plt.close()
